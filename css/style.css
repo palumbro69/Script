@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Asap Sharp", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sfondo {
+  height: 250px;
+}
+
+.sfondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenuto {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.sinistra h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sinistra ul {
+  color: #cddc39;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.sinistra li {
+  margin-bottom: 12px;
+}
+
+.destra {
+  text-align: center;
+}
+
+.destra h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bottone {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Asap Sharp", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.bottone:hover {
+  transform: rotate(360deg); 
+}
+
+@media (max-width: 768px) {
+  .contenuto {
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+  }
+
+  .sinistra, .destra {
+    width: 100%;          
+    margin-bottom: 40px;  
+  }
+
+  .sinistra ul {
+    display: inline-block; 
+    text-align: left;      
+  }
+}
